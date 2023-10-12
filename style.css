@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ccc;
+}
+
+.topo{
+    background-image:url(/imagens/bg-3.jpg);
+    height: 500px;
+    background-size:cover;
+    background-position: right center;
+}
+
+.topo__navegador{
+    list-style-type: none;
+    display: flex;
+    justify-content:end;
+    align-items: center;
+}
+
+.navegador__link{
+    background-color: rgba(0, 0,0, 0.3);
+    margin: 20px 20px;
+    border: solid 1px white;
+    padding: 16px;
+}
+
+.link{
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.navegador__titulo{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 56px;
+    font-weight: 50px;
+    text-shadow: 2px 2px 2px black;
+}
+
+.topo__pesquisa{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.pesquisa{
+    margin-top: 30px;
+    background-color: rgba(0, 0,0, 0.7);
+    padding: 15px;
+    border-bottom:  solid 2px;
+}
+
+.pesquisa__link{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    text-shadow: 1px 1px 1px black;
+}
+
+.conteúdo__principal{
+    margin: auto;
+    background-color: rgb(234, 227, 227);
+}
+
+.caixa{
+    margin: 32px 150px;
+    background-color:bisque;
+    padding: 30px;
+    height: 150px;
+    line-height: 25px;
+    display: inline-block;
+}
+
+.caixa__titulo{
+    border-bottom: 2px solid #ccc;
+    background-color:gray;
+    color: black;
+    padding: 10px;
+    border-radius: 2px;
+}
+
+.caixa__Link{
+    background-color: #cdc7c3;
+    position: absolute;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.rodape{
+    color: white;
+    text-align: center;
+    background-color:#6b6c68;
+    text-shadow: 2px 2px 2px black;
+    padding: 30px;
+    padding: 20px;
+    letter-spacing: 2px;
+}
+
+@media (max-width:800px){
+    body{
+       height: 100vh;
+    }
+
+    .topo{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .topo__navegador{
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .navegador__titulo{
+        font-size: 25px;
+    }
+
+    .pesquisa{
+        margin: 10px 10px;
+        padding: 10px;
+    }
+
+    .caixa{
+        margin: auto;
+        height: 50vh;
+
+}
+
+}
